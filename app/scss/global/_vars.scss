@@ -1,0 +1,17 @@
+$blue-color: #2E31BC;
+
+$black-color: #000000;
+
+$green-color: #2AF020;
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

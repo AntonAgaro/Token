@@ -1,0 +1,81 @@
+.header {
+    height: 70.94px;
+    @include flex;
+    
+    &__menu {
+        @include flex;
+        gap: 40px;   
+    }
+    &__menu-item {
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+    }
+    &__menu-item-link {
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 120%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $blue-color;
+    }
+    &__social {
+        @include flex;
+        gap: 30px;
+    }
+    &__btn {
+        cursor: pointer;
+        @include flex-center;
+        gap: 8.79px;
+        width: 200px;
+        height: 48px;
+        border-radius: 50px;
+        border: none;
+        background: $blue-color;
+        color: $green-color;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 120%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+}
+
+.animated__menuIn {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        z-index: -1;
+        top: -100%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        animation: fadeIn 1s ease-in;
+        animation: round 2s linear infinite;
+}
+.animated__menuInFirst {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: -1;
+    top: -100%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    animation: fadeIn 1s ease-in;
+    animation: round 2s linear infinite;
+}
+
+.animated__menuOut {
+        width: 50px;
+        height: 50px;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('../images/header/hover.png');
+        animation: fadeOut 1s ease-out;
+}
