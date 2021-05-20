@@ -1,6 +1,7 @@
 .token {
-    margin-top: 91px;
+    padding-top: 91px;
     padding-bottom: 125px;
+    background:  #F0F0F0;
     &__title {
         margin-left: 9px;
         font-family: Montserrat;
@@ -106,9 +107,13 @@
         line-height: 140%;
         color: #262626;
     }
-    &__wrapper-btn {
+    &__wrapper-button {
+        z-index: 9999;
         margin-right: -9px;
         position: relative;
+    }
+    &__wrapper-btn {
+        z-index: 9999;
         width: 200px;
         height: 48px;
         @include flex-center;

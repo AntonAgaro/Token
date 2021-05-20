@@ -1,9 +1,105 @@
 .key {
-    background-color: #fff;
-    border-radius: 100px;
-    padding-top: 101px;
-    &__title {
-        
+    position: relative;
+    background:  #F0F0F0;
+    &__vector-line {
+        position: absolute;
+        top: 155px;
+        left: 7px;
     }
-    
+    &__gray-wrapper {
+        background-color: #fff;
+        border-radius: 100px 100px 0 0 ;
+        padding-top: 105px;
+    }
+    &__wrapper {
+        margin-left: 7px;
+        position: relative;
+        @include flex;
+        align-items: flex-start;
+        position: relative;
+    }
+    &__items {
+        margin-top: 72px;
+        display: flex;
+        flex-flow: column;
+        gap: 42px;
+    }
+    &__item {
+        @include flex-center;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+    &__item-descr {
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 120%;
+        color: $black-color;
+        &--first {
+            width: 252px;
+            height: 72px;
+        }
+        &--second {
+            width: 521px;
+            height: 72px;
+        }
+    }
+    &__blue-round {
+        margin-top: 16px;
+        margin-right: -6px;
+        position: relative;
+        width: 559px;
+        height: 559px;
+        background: $blue-color;
+        border-radius: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    &__subtitle-white {
+        margin-top: 19px;
+        width: 284px;
+        height: 84px;
+    }
+    &__blue-text {
+        width: 301px;
+        height: 184px;
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 140%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__blue-icon {
+        position: absolute;
+        top: 2.1%;
+        right: 18.3%;
+    }
+    &__yellow-icon {
+        position: absolute;
+        top: 39%;
+        left: 50.3%;
+    }
+    &__btn {
+        margin-top: 46px;
+        width: 180px;
+        height: 36px;
+        @include flex-center;
+        background: #FFFFFF;
+        border: 1px solid #DCDCDC;
+        box-sizing: border-box;
+        border-radius: 70px;
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $blue-color;
+        cursor: pointer;
+    }
 }

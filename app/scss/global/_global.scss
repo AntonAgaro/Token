@@ -1,8 +1,6 @@
 html,
 body {
 	height: 100%;
-	padding-top: 17px;
-	background: #F0F0F0;
 }
 
 .footer {
@@ -12,7 +10,10 @@ body {
 .container{
 	max-width: 1360px;
 	margin: 0 auto;
-	padding: 0; 
+	padding: 0;
+	&--header {
+		@include flex;
+	} 
 }
 
 .subtitle {
