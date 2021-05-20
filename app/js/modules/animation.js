@@ -43,7 +43,6 @@ export default class Animation {
         } else {
             round.classList.add('animated__menuIn', 'round-round');
         }
-        console.log(event.target);
         element.append(round);
         this.fadeIn(round);
     }

@@ -1,0 +1,146 @@
+.token {
+    margin-top: 91px;
+    padding-bottom: 125px;
+    &__title {
+        margin-left: 9px;
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 120%;
+        color: $blue-color;
+    }
+    &__descr {
+        margin-left: 9px;
+        position: relative;
+        margin-top: 14px;
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 120%;
+        color: $black-color;
+    }
+    &__descr-span {
+        position: absolute;
+        &-blue {
+            width: 156px;
+            height: 8px;
+            left: 380px;
+            top: 80px;
+            background: $blue-color;
+        }
+        &-small {
+            width: 11px;
+            height: 8px;
+            top: 80px;
+            left: 544px;
+            background: #2C946B;
+        }
+        &-green {
+            width: 179px;
+            height: 8px;
+            top: 80px;
+            left: 561px;
+            background: $green-color;
+        }
+    }
+    &__wrapper {
+        margin-top: 103.8px;
+        margin-left: 7px;
+        @include flex;
+    }
+    &__wrapper-text {
+        margin-right: 14px;
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 120%;
+        color: $black-color;
+    }
+    &__progress {
+        margin-top: 4px;
+        width: 809px;
+        display: flex;
+        flex-flow: column;
+        align-items: space-between;
+        justify-content: space-between;
+        gap: 10px   
+    }
+    &__progress-wrapper {
+        @include flex;
+    }
+    &__progress-text {
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        color: #262626;
+    }
+    &__scale-progress {
+        
+        width: 809px;
+        height: 28px;
+        border: 2px solid rgba(0,0,0, 0.1);
+        border-radius: 50px;
+    }
+    &__scale-progress-back {
+        position: relative;
+        width: 78%;
+        height: 100%;
+        background: linear-gradient(270deg, #2E31BC 1.13%, #2AF020 100%);
+        border-radius: 50px;
+    } 
+    &__scale-progress-number {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+    &__progress-boldtext {
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        color: #262626;
+    }
+    &__wrapper-btn {
+        margin-right: -9px;
+        position: relative;
+        width: 200px;
+        height: 48px;
+        @include flex-center;
+        border-radius: 45px;
+        border: none;
+        background: $blue-color;
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $green-color;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        &:hover {
+            background: $black-color;
+        }
+    }
+    &__wrapper-btn-img {
+        z-index: -1;
+        position: absolute;
+        width: 146px;
+        height: 147.29px;
+        top: -100%;
+        left: 16%;
+    }
+}
+//Анимация для кнопки  buy tokens
+.animated {
+    animation: round 2s linear infinite;
+}
+
+
