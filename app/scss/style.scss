@@ -1,13 +1,15 @@
+@import 'global/vars';
 @import 'global/global';
 @import 'global/fonts';
 @import 'global/reset';
 @import 'global/libs';
 @import 'global/animations';
-@import 'global/vars';
+
 
 
 //sections
 @import './sections/header';
 @import './sections/token';
+@import './sections/key';
 
 
