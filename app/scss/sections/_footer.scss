@@ -1,0 +1,46 @@
+.footer {
+    padding-bottom: 51px;
+    &__social {
+        @include flex;
+        height: 101px;
+        border: 1px solid rgba(#C4C4C4, 0.4);
+    }
+    &__social-item {
+        @include flex-center;
+        flex-basis: 33%;
+        height: 100%;
+        border-right: 1px solid rgba(#C4C4C4, 0.4);
+        gap: 10px;
+        &--last {
+            border: none;
+        }
+    }
+    &__text {
+        margin: 39px auto 0 auto;
+        text-align: center;
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 120%;
+        text-align: center;
+        color: rgba($black-color, 0.66);
+        &--down {
+            margin: 18px auto 0 auto;
+        }
+        &--link {
+            text-decoration-line: underline;
+        }
+    }
+    &__social-name {
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: $blue-color;
+        &:hover {
+            color: $black-color;
+            padding-bottom: 3.5px;
+            border-bottom: 1px solid rgba($green-color, 0.6);
+        }
+    }
+}

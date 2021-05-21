@@ -1,0 +1,83 @@
+.roadmap {
+    padding-top: 99px;
+    padding-bottom: 61px;
+    position: relative;
+    &__vector {
+        position: absolute;
+        top: 95px;
+        left: 6px;
+    }
+    &__line {
+        width: 100%;
+        position: absolute;
+        top: 64%;
+        @include flex;
+        justify-content: flex-start;
+        gap: 0px;
+    }
+    &__green-line {
+        width: 275px;
+        height: 3px;
+        background-color: $green-color;
+        &--long {
+            width: 440px;
+        }
+        &--second {
+            width: 292px;
+        }
+        &--fourth {
+            width: 305px;
+        }
+        &--last {
+            width: 488px;
+        }
+    }
+    &__subtitle {
+        margin-left: 7px;
+    }
+    &__inner {
+        width: 917px;
+        @include flex;
+        &--up {
+            margin-top: 60px;
+            margin-left: 9px;
+        }
+        &--down {
+            margin-top: 83px;
+            margin-left: 329px;
+        }
+    }
+    &__item {
+        &--first {
+            width: 204px;
+            height: 54px;
+        }
+        &--second {
+            width: 128px;
+            height: 54px;
+        }
+        &--third {
+            width: 306px;
+            height: 83px;
+        }
+        &--fourth {
+            margin-top: -30px;
+            margin-right: -11px;
+        }
+    }
+    &__item-title {
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+        color: $black-color;
+    }
+    &__item-subtitle {
+        margin-top: 8px;
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        color: $black-color;
+    }
+}

@@ -101,5 +101,10 @@
         text-transform: uppercase;
         color: $blue-color;
         cursor: pointer;
+        transition: all .5s ease-in-out;
+        &:hover {
+            background: $blue-color;
+            color: #FFFFFF;
+        }
     }
 }
