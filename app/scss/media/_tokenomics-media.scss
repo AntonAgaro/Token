@@ -1,0 +1,145 @@
+
+@media (max-width: 1290px) {
+    .tokenomics {
+        &__items {
+            column-gap: 50px;
+        }
+    }
+}
+@media (max-width: 1210px) {
+    .tokenomics {
+        &__items {
+            column-gap: 20px;
+        }
+    }
+}
+@media (max-width: 1080px) {
+    .tokenomics {
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr)
+        }
+    }
+}
+@media (max-width: 780px) {
+    .tokenomics {
+        &__wrapper {
+            padding-top: 46px;
+            padding-bottom: 0;
+            height: 867px;
+        }
+        &__subtitle {
+            font-size: 40px;
+        }
+        &__union {
+            width: 90px;
+            height: 91.87px;
+            top: -39px;
+            right: 60px;
+        }
+        &__header {
+            flex-flow: column;
+            align-items: flex-start;
+            margin-left: 12px;
+            gap: 0px;
+        }
+        &__descr {
+            margin-top: 9px;
+            width: 415px;
+            height: 50px;
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 140%;
+            color: $black-color;
+        }
+        &__dividers {
+            display: none;
+        }
+        &__divider {
+            &--media {
+                display: block;
+            }
+            &--first {
+                max-width: 100%;
+            }
+            &--second {
+                max-width: 100%;
+            }
+            &--third {
+                max-width: 100%;
+            }
+            &--fourth {
+                max-width: 100%;
+            }
+            &--fifth {
+                max-width: 100%;
+                background: #85839E;
+                border-radius: 20px;
+                opacity: 0.2;
+            }
+        }
+        &__items {
+            max-width: 668px;
+            margin-top: 36px;
+            margin-left: 12px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            column-gap: 36px;
+            row-gap: 49px;
+        }
+        &__item {
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            flex-wrap: wrap;
+            &--fifth {
+                margin-top: -33px;
+                display: none;
+            }
+            &--media {
+                display: flex;
+                margin-top: 12px;
+            }
+        }
+        &__item-list {
+            flex-wrap: wrap; 
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .tokenomics {
+        &__union {
+            display: none;
+        }
+        &__wrapper {
+            padding-top: 41px;
+            height: 1364px;
+        }
+        &__header {
+            margin-left: 7px;
+        }
+        &__subtitle {
+            font-size: 30px;
+            width: 100%;
+            text-align: center;
+        }
+        &__descr {
+            margin-top: 22px;
+            width: 330px;
+            height: 83px;
+            text-align: center;
+        }
+        &__items {
+            display: flex;
+            flex-flow: column;
+            margin-top: 30px;
+            margin-left: 26px;
+        }
+        &__item-num {
+            margin-top: 15px;
+        }
+    }
+
+}

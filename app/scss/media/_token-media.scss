@@ -1,0 +1,187 @@
+@media (max-width: 1395px) {
+    .token {
+        &__wrapper-button {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 1210px) {
+    .token {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+    }
+}
+@media (max-width: 1050px) {
+    .token {
+        &__progress {
+            max-width: 448px;
+        }
+        &__scale-progress {
+            max-width: 448px;
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .token {
+        padding-top: 38.06px;
+        padding-bottom: 55px;
+        &__title {
+            font-size: 50px;
+            margin-left: 12px;
+        }
+        &__descr {
+            font-size: 50px;
+            margin-top: 19px;
+            margin-left: 12px;
+        }
+        &__descr-span {
+            &-blue {
+                width: 113px;
+                height: 6px;
+                // left: 272px;
+                // top: 58px;
+                background: $blue-color;
+            }
+            &-small {
+                width: 11px;
+                height: 6px;
+                // top: 58px;
+                // left: 389px;
+                background: #2C946B;
+            }
+            &-green {
+                width: 125px;
+                height: 6px;
+                // top: 58px;
+                // left: 403px;
+                background: $green-color;
+            }
+        }
+        &__wrapper {
+            margin-top: 40.8px;
+            margin-left: 12px;
+        }
+        &__progress {
+            margin-top: 10px;
+        }
+        &__progress-text {
+            width: 251px;
+            height: 40px;
+            &--small {
+                margin-top: 20px;
+                width: 105px;
+                height: 20px;
+            }
+        }
+        &__progress-text-br {
+            display: block;
+        }
+        &__scale-progress-back {
+            width: 89%;
+        }
+        &__scale-progress-number {
+            top: 3px;
+            right: 9px;
+        }
+        &__progress-boldtext {
+            &--small {
+                text-align: right;
+            }
+        }
+        &__wrapper-btn {
+            margin-right: -3px;
+        }
+    }
+    
+}
+
+@media (max-width: 580px) {
+    .token {
+        padding-top: 15.06px;
+        &__title {
+            text-align: center;
+            font-size: 30px;
+            margin-left: 2px;
+        }
+        &__descr {
+            text-align: center;
+            font-size: 30px;
+            margin-left: 2px;
+            margin-top: 10px;
+        }
+        &__descr-span {
+            height: 4px;
+        }
+        &__descr-span-blue {
+            width: 68px;
+            left: 51%;
+            top: 22%;
+        }
+        &__descr-span-small {
+            width: 7px;
+            top: 22%;
+            left: 71.2%;
+        }
+        &__descr-span-green {
+            width: 74px;
+            top: 22%;
+            left: 74.5%;
+        }
+        &__romb-media {
+            display: block;
+            margin: 33.34px auto 0 auto;
+        }
+        &__wrapper {
+            margin-top: 17.34px;
+            margin-left: 5px;
+            width: 336px;
+            height: 244.76px;
+            justify-content: center;
+        }
+        &__wrapper-text {
+            margin: 0 auto;
+            width: 116px;
+            height: 22px;
+            font-size: 18px;
+        }
+        &__progress {
+            margin-top: -22px;
+            width: 336px;
+            height: 116px;
+        }
+        &__progress-text {
+            width: 215px;
+            height: 34px;
+            font-size: 12px;
+            &--small {
+                width: 90px;
+                height: 17px;
+            }
+        }
+        &__scale-progress {
+            width: 335px;
+        }
+        &__scale-progress-back {
+            width: 76%;
+        }
+        &__progress-boldtext {
+            font-size: 12px;
+        }
+        &__wrapper-button {
+            width: 200px;
+            height: 36px;
+        }
+        &__wrapper-btn {
+            height: 36px;
+        }
+        &__wrapper-btn-img {
+            width: 86px;
+            height: 86.76px;
+            top: -78%;
+            left: 29%;
+        }
+    }
+}

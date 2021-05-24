@@ -2,6 +2,9 @@
     padding-top: 91px;
     padding-bottom: 125px;
     background:  #F0F0F0;
+    &__romb-media {
+        display: none;
+    }
     &__title {
         margin-left: 9px;
         font-family: Montserrat;
@@ -25,22 +28,22 @@
         &-blue {
             width: 156px;
             height: 8px;
-            left: 380px;
-            top: 80px;
+            left: 28.2%;
+            top: 32%;
             background: $blue-color;
         }
         &-small {
             width: 11px;
             height: 8px;
-            top: 80px;
-            left: 544px;
+            top: 32%;
+            left: 40.2%;
             background: #2C946B;
         }
         &-green {
             width: 179px;
             height: 8px;
-            top: 80px;
-            left: 561px;
+            top: 32%;
+            left: 41.5%;
             background: $green-color;
         }
     }
@@ -75,6 +78,9 @@
         font-size: 14px;
         line-height: 140%;
         color: #262626;
+    }
+    &__progress-text-br {
+        display: none;
     }
     &__scale-progress {
         

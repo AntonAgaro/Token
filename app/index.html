@@ -8,12 +8,103 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="up">
       <div class="container container--header">
+        <img class="header__media-rocket" src="images/header/rocket-media.png" alt="rocket">
         <a class="header__logo" href="#">
           <img src="images/header/logo.png" alt="" class="header__logo-img">
         </a>
         <ul class="header__menu">
+          <li class="header__menu-item">
+            <a href="#sources" class="header__menu-item-link" id="header-first">Intro</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#key" class="header__menu-item-link">Features</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#tokenomics" class="header__menu-item-link">Tokenomics</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#roadmap" class="header__menu-item-link">Roadmap</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#partners" class="header__menu-item-link">partners</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#footer" class="header__menu-item-link">Whitepaper</a>
+          </li>
+        </ul>
+        <div class="header__social">
+          <svg class="header__social-icon" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.7679 0.117306C20.0326 0.0124427 20.3216 -0.023015 20.6054 0.0145637C20.8891 0.0521424 21.1573 0.161407 21.3825 0.331164C21.6077 0.500921 21.7819 0.725068 21.8871 0.980642C21.9923 1.23621 22.0248 1.51403 21.9812 1.78561C21.3536 5.70141 20.203 12.8768 19.5922 16.6857C19.55 16.9493 19.4375 17.1979 19.2658 17.4076C19.0941 17.6173 18.8689 17.7809 18.612 17.8827C18.3551 17.9845 18.0751 18.0209 17.7993 17.9885C17.5234 17.9561 17.2608 17.856 17.0371 17.6978C14.8764 16.1706 11.637 13.8807 9.99226 12.7177C9.86534 12.628 9.7605 12.5126 9.68515 12.3797C9.6098 12.2469 9.56577 12.0997 9.55617 11.9488C9.54658 11.7978 9.57165 11.6466 9.62962 11.5059C9.68759 11.3653 9.77705 11.2385 9.89167 11.1347C11.3987 9.76911 14.4004 7.04939 16.4655 5.17803C16.5142 5.13368 16.5438 5.07349 16.5486 5.00927C16.5534 4.94505 16.5331 4.88143 16.4915 4.83086C16.45 4.7803 16.3902 4.74644 16.324 4.73592C16.2578 4.7254 16.1899 4.73898 16.1336 4.774C13.4856 6.43094 9.43021 8.96828 7.44262 10.2119C7.07013 10.445 6.6515 10.6018 6.21293 10.6724C5.77436 10.7431 5.32531 10.7262 4.89389 10.6226C3.79945 10.3602 2.22082 9.98146 0.815967 9.6446C0.59602 9.59187 0.399022 9.4739 0.253033 9.3075C0.107044 9.14109 0.0195092 8.93473 0.00289639 8.71781C-0.0137165 8.50089 0.0414402 8.28447 0.16051 8.09937C0.279579 7.91428 0.456489 7.76996 0.666041 7.68695C5.55649 5.74895 15.127 1.95663 19.7679 0.117306Z" fill="#2E31BC"/>
+          </svg>
+            <svg  class="header__social-icon" width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.1539 2.84845C21.33 3.20984 20.4522 3.44938 19.5369 3.56568C20.4785 3.00353 21.1971 2.12014 21.5349 1.05538C20.6571 1.57876 19.6879 1.94845 18.6549 2.15476C17.8214 1.26722 16.6334 0.717529 15.3374 0.717529C12.8229 0.717529 10.7986 2.75845 10.7986 5.26045C10.7986 5.62045 10.8291 5.96661 10.9039 6.29614C7.128 6.11199 3.78693 4.3023 1.54246 1.54553C1.15062 2.22538 0.92077 3.00353 0.92077 3.84122C0.92077 5.41414 1.73077 6.80845 2.93816 7.61568C2.20846 7.60184 1.49262 7.38999 0.886154 7.0563C0.886154 7.07015 0.886154 7.08814 0.886154 7.10614C0.886154 9.31322 2.46046 11.1465 4.52493 11.5688C4.15523 11.6698 3.75231 11.7183 3.33416 11.7183C3.04339 11.7183 2.74985 11.7017 2.47431 11.6408C3.06277 13.4394 4.73262 14.7617 6.71816 14.8046C5.17293 16.0134 3.21092 16.7417 1.08692 16.7417C0.714462 16.7417 0.357231 16.7251 0 16.6794C2.01185 17.9768 4.39616 18.7175 6.96739 18.7175C15.3249 18.7175 19.8942 11.7945 19.8942 5.79353C19.8942 5.59276 19.8872 5.39891 19.8776 5.20645C20.7789 4.56676 21.5363 3.76784 22.1539 2.84845Z" fill="#2E31BC"/>
+            </svg>   
+            <button class="header__btn">
+              <img src="images/header/rocket.svg" alt="rocket" class="header__btn-img">
+              <div class="header__btn-text">Apply now</div>
+            </button>  
+            <div class="header__burger">
+              <div class="header__burger-block"></div>
+              <div class="header__burger-block header__burger-block--rotate header__burger-block--second"></div>
+              <div class="header__burger-block"></div>
+            </div>   
+        </div>
+        <img class="header__menu-media-320" src="images/header/menu-media-320.png" alt="menu-media-320" >
+      </div>
+    </header>
+    <div class="tab">
+      <div class="container container--header">
+        <a class="header__logo" href="#">
+          <img src="images/header/logo.png" alt="" class="header__logo-img">
+        </a>
+        <div class="header__social">
+          <svg class="header__social-icon" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.7679 0.117306C20.0326 0.0124427 20.3216 -0.023015 20.6054 0.0145637C20.8891 0.0521424 21.1573 0.161407 21.3825 0.331164C21.6077 0.500921 21.7819 0.725068 21.8871 0.980642C21.9923 1.23621 22.0248 1.51403 21.9812 1.78561C21.3536 5.70141 20.203 12.8768 19.5922 16.6857C19.55 16.9493 19.4375 17.1979 19.2658 17.4076C19.0941 17.6173 18.8689 17.7809 18.612 17.8827C18.3551 17.9845 18.0751 18.0209 17.7993 17.9885C17.5234 17.9561 17.2608 17.856 17.0371 17.6978C14.8764 16.1706 11.637 13.8807 9.99226 12.7177C9.86534 12.628 9.7605 12.5126 9.68515 12.3797C9.6098 12.2469 9.56577 12.0997 9.55617 11.9488C9.54658 11.7978 9.57165 11.6466 9.62962 11.5059C9.68759 11.3653 9.77705 11.2385 9.89167 11.1347C11.3987 9.76911 14.4004 7.04939 16.4655 5.17803C16.5142 5.13368 16.5438 5.07349 16.5486 5.00927C16.5534 4.94505 16.5331 4.88143 16.4915 4.83086C16.45 4.7803 16.3902 4.74644 16.324 4.73592C16.2578 4.7254 16.1899 4.73898 16.1336 4.774C13.4856 6.43094 9.43021 8.96828 7.44262 10.2119C7.07013 10.445 6.6515 10.6018 6.21293 10.6724C5.77436 10.7431 5.32531 10.7262 4.89389 10.6226C3.79945 10.3602 2.22082 9.98146 0.815967 9.6446C0.59602 9.59187 0.399022 9.4739 0.253033 9.3075C0.107044 9.14109 0.0195092 8.93473 0.00289639 8.71781C-0.0137165 8.50089 0.0414402 8.28447 0.16051 8.09937C0.279579 7.91428 0.456489 7.76996 0.666041 7.68695C5.55649 5.74895 15.127 1.95663 19.7679 0.117306Z" fill="#2E31BC"/>
+          </svg>
+            <svg  class="header__social-icon" width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.1539 2.84845C21.33 3.20984 20.4522 3.44938 19.5369 3.56568C20.4785 3.00353 21.1971 2.12014 21.5349 1.05538C20.6571 1.57876 19.6879 1.94845 18.6549 2.15476C17.8214 1.26722 16.6334 0.717529 15.3374 0.717529C12.8229 0.717529 10.7986 2.75845 10.7986 5.26045C10.7986 5.62045 10.8291 5.96661 10.9039 6.29614C7.128 6.11199 3.78693 4.3023 1.54246 1.54553C1.15062 2.22538 0.92077 3.00353 0.92077 3.84122C0.92077 5.41414 1.73077 6.80845 2.93816 7.61568C2.20846 7.60184 1.49262 7.38999 0.886154 7.0563C0.886154 7.07015 0.886154 7.08814 0.886154 7.10614C0.886154 9.31322 2.46046 11.1465 4.52493 11.5688C4.15523 11.6698 3.75231 11.7183 3.33416 11.7183C3.04339 11.7183 2.74985 11.7017 2.47431 11.6408C3.06277 13.4394 4.73262 14.7617 6.71816 14.8046C5.17293 16.0134 3.21092 16.7417 1.08692 16.7417C0.714462 16.7417 0.357231 16.7251 0 16.6794C2.01185 17.9768 4.39616 18.7175 6.96739 18.7175C15.3249 18.7175 19.8942 11.7945 19.8942 5.79353C19.8942 5.59276 19.8872 5.39891 19.8776 5.20645C20.7789 4.56676 21.5363 3.76784 22.1539 2.84845Z" fill="#2E31BC"/>
+            </svg>   
+            <button class="header__btn">
+              <img src="images/header/rocket.svg" alt="rocket" class="header__btn-img">
+              <div class="header__btn-text">Apply now</div>
+            </button>  
+            <div class="header__burger close">
+              <div class="header__burger-block header__burger-block--first rotate-first"></div>
+              <div class="header__burger-block header__burger-block--third rotate-second"></div>
+            </div>   
+        </div>
+      </div>
+      <ul class="tab__menu">
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-item-link" id="header-first">Intro</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-item-link">Features</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-item-link">Tokenomics</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-item-link">Roadmap</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-item-link">partners</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-item-link">Whitepaper</a>
+        </li>
+      </ul>
+    </div>
+    <div class="mobile-menu">
+      <div class="container">
+        <button class="header__btn--mobile">
+          <img src="images/header/rocket.svg" alt="rocket" class="header__btn-img">
+          <div class="header__btn-text">Apply now</div>
+        </button>  
+        <img class="mobile-menu__close-btn close" src="images/header/mobile/close.png" alt="close">
+        <ul class="tab__menu tab__menu--mobile">
           <li class="header__menu-item">
             <a href="#" class="header__menu-item-link" id="header-first">Intro</a>
           </li>
@@ -33,22 +124,28 @@
             <a href="#" class="header__menu-item-link">Whitepaper</a>
           </li>
         </ul>
-        <div class="header__social">
-          <svg class="header__social-icon" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.7679 0.117306C20.0326 0.0124427 20.3216 -0.023015 20.6054 0.0145637C20.8891 0.0521424 21.1573 0.161407 21.3825 0.331164C21.6077 0.500921 21.7819 0.725068 21.8871 0.980642C21.9923 1.23621 22.0248 1.51403 21.9812 1.78561C21.3536 5.70141 20.203 12.8768 19.5922 16.6857C19.55 16.9493 19.4375 17.1979 19.2658 17.4076C19.0941 17.6173 18.8689 17.7809 18.612 17.8827C18.3551 17.9845 18.0751 18.0209 17.7993 17.9885C17.5234 17.9561 17.2608 17.856 17.0371 17.6978C14.8764 16.1706 11.637 13.8807 9.99226 12.7177C9.86534 12.628 9.7605 12.5126 9.68515 12.3797C9.6098 12.2469 9.56577 12.0997 9.55617 11.9488C9.54658 11.7978 9.57165 11.6466 9.62962 11.5059C9.68759 11.3653 9.77705 11.2385 9.89167 11.1347C11.3987 9.76911 14.4004 7.04939 16.4655 5.17803C16.5142 5.13368 16.5438 5.07349 16.5486 5.00927C16.5534 4.94505 16.5331 4.88143 16.4915 4.83086C16.45 4.7803 16.3902 4.74644 16.324 4.73592C16.2578 4.7254 16.1899 4.73898 16.1336 4.774C13.4856 6.43094 9.43021 8.96828 7.44262 10.2119C7.07013 10.445 6.6515 10.6018 6.21293 10.6724C5.77436 10.7431 5.32531 10.7262 4.89389 10.6226C3.79945 10.3602 2.22082 9.98146 0.815967 9.6446C0.59602 9.59187 0.399022 9.4739 0.253033 9.3075C0.107044 9.14109 0.0195092 8.93473 0.00289639 8.71781C-0.0137165 8.50089 0.0414402 8.28447 0.16051 8.09937C0.279579 7.91428 0.456489 7.76996 0.666041 7.68695C5.55649 5.74895 15.127 1.95663 19.7679 0.117306Z" fill="#2E31BC"/>
-          </svg>
-            <svg  class="header__social-icon" width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22.1539 2.84845C21.33 3.20984 20.4522 3.44938 19.5369 3.56568C20.4785 3.00353 21.1971 2.12014 21.5349 1.05538C20.6571 1.57876 19.6879 1.94845 18.6549 2.15476C17.8214 1.26722 16.6334 0.717529 15.3374 0.717529C12.8229 0.717529 10.7986 2.75845 10.7986 5.26045C10.7986 5.62045 10.8291 5.96661 10.9039 6.29614C7.128 6.11199 3.78693 4.3023 1.54246 1.54553C1.15062 2.22538 0.92077 3.00353 0.92077 3.84122C0.92077 5.41414 1.73077 6.80845 2.93816 7.61568C2.20846 7.60184 1.49262 7.38999 0.886154 7.0563C0.886154 7.07015 0.886154 7.08814 0.886154 7.10614C0.886154 9.31322 2.46046 11.1465 4.52493 11.5688C4.15523 11.6698 3.75231 11.7183 3.33416 11.7183C3.04339 11.7183 2.74985 11.7017 2.47431 11.6408C3.06277 13.4394 4.73262 14.7617 6.71816 14.8046C5.17293 16.0134 3.21092 16.7417 1.08692 16.7417C0.714462 16.7417 0.357231 16.7251 0 16.6794C2.01185 17.9768 4.39616 18.7175 6.96739 18.7175C15.3249 18.7175 19.8942 11.7945 19.8942 5.79353C19.8942 5.59276 19.8872 5.39891 19.8776 5.20645C20.7789 4.56676 21.5363 3.76784 22.1539 2.84845Z" fill="#2E31BC"/>
-            </svg>   
-            <button class="header__btn">
-              <img src="images/header/rocket.svg" alt="rocket" class="header__btn-img">
-              <div class="header__btn-text">Apply now</div>
-            </button>     
+        <div class="footer__social footer__social--mobile">
+          <div class="footer__social-item">
+            <img class="footer__social-img" src="images/footer/telegram.svg" alt="telegram">
+            <a class="footer__social-name" href="#">Telegram</a>
+          </div>
+          <div class="footer__social-item">
+            <img class="footer__social-img" src="images/footer/medium.svg" alt="medium">
+            <a class="footer__social-name" href="#">Medium</a>
+          </div>
+          <div class="footer__social-item footer__social-item--last">
+            <img class="footer__social-img" src="images/footer/twitter.svg" alt="twitter">
+            <a class="footer__social-name" href="#">Twitter</a>
+          </div>
+        </div>
+        <div class="footer__text">© 2021 Token Echo. All rights reserved.</div>
+        <div class="footer__text footer__text--down">
+          <a href="#" class="footer__text footer__text--link">Terms and conditions</a>
         </div>
       </div>
-    </header>
+    </div>
 
-  <section class="token">
+  <section class="token" id="token">
     <div class="container">
       <h1 class="token__title">Token Echo</h1>
       <div class="token__descr">
@@ -57,13 +154,13 @@
         <span class="token__descr-span token__descr-span-small"></span>
         <span class="token__descr-span token__descr-span-green"></span>
       </div>
-
+      <img class="token__romb-media" src="images/token/romb-media.png" alt="rocket-media">
       <div class="token__wrapper">
         <div class="token__wrapper-text">Sale metrics</div>
         <div class="token__progress">
           <div class="token__progress-wrapper">
-            <div class="token__progress-text">Maximum buy per address 50 BNB / 1 470.59 EBRH</div>
-            <div class="token__progress-text">Sale is finished</div>
+            <div class="token__progress-text">Maximum buy<br class="token__progress-text-br"> per address 50 BNB / 1 470.59 EBRH</div>
+            <div class="token__progress-text token__progress-text--small">Sale is finished</div>
           </div>
           <div class="token__scale">
             <div class="token__scale-progress">
@@ -74,8 +171,8 @@
             
           </div>
           <div class="token__progress-wrapper">
-            <div class="token__progress-boldtext">Tokens sold 1 240 000 TokenEcho</div>
-            <div class="token__progress-boldtext">Hardcap 300 000 EBRH</div>
+            <div class="token__progress-boldtext">Tokens sold<br class="token__progress-text-br"> 1 240 000 TokenEcho</div>
+            <div class="token__progress-boldtext token__progress-boldtext--small">Hardcap<br class="token__progress-text-br"> 300 000 EBRH</div>
           </div>
         </div>
         <div class="token__wrapper-button">
@@ -90,13 +187,13 @@
       </div>
     </div>
   </section>
-  <section class="key">
+  <section class="key" id="key">
     <img class="key__vector-line" src="images/key/bg.png" alt="vector">
     <div class="key__gray-wrapper">
       <div class="container">
+        <h2 class="subtitle key__title">Key Opportunities</h2>
         <div class="key__wrapper">
           <div class="key__wrapper-text">
-            <h2 class="subtitle key__title">Key Opportunities</h2>
             <div class="key__items">
               <div class="key__item">
                 <img class="key__item-icon" src="images/key/horse.png" alt="horse">
@@ -125,7 +222,7 @@
       </div>
     </section>
   
-    <section class="sources">
+    <section class="sources" id="sources">
       <div class="container">
         <div class="sources__wrapper">
           <div class="sources__text">
@@ -164,7 +261,7 @@
       </div>
     </div>
   </section>
-  <section class="tokenomics">
+  <section class="tokenomics" id="tokenomics">
     <div class="tokenomics__wrapper">
       <img class="tokenomics__union" src="images/tokenomics/union.png" alt="union" >
       <div class="container">
@@ -185,6 +282,7 @@
         </div>
         <div class="tokenomics__items">
           <div class="tokenomics__item">
+            <div class="tokenomics__divider tokenomics__divider--first tokenomics__divider--media"></div>
             <div class="tokenomics__item-num">22.5% </div>
             <div class="tokenomics__item-title">Sale & Listing</div>
             <div class="tokenomics__item-list tokenomics__item-list--first">
@@ -195,8 +293,27 @@
                 <div class="tokenomics__item-descr">12% 1.2M ECHO Round 2 sale at $0.625 rate ($750k)</div>
               </div>
             </div>
+            <div class="tokenomics__item tokenomics__item--fifth tokenomics__item--media">
+              <div class="tokenomics__item-title tokenomics__item-title--black">Echo Vesting</div>
+              <div class="tokenomics__item-divider"></div>
+              <div class="tokenomics__item-list tokenomics__item-list--fifth">
+                <div class="tokenomics__item-point">
+                  <div class="tokenomics__item-descr">5 month period</div>
+                </div>
+                <div class="tokenomics__item-point">
+                  <div class="tokenomics__item-descr">10% 0.2M ECHO Listing</div>
+                </div>
+                <div class="tokenomics__item-point">
+                  <div class="tokenomics__item-descr">10% 0.2M ECHO 30 days after listing</div>
+                </div>
+                <div class="tokenomics__item-point">
+                  <div class="tokenomics__item-descr">20% 0.4M ECHO unlocks after each month over 4 month period</div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="tokenomics__item">
+            <div class="tokenomics__divider tokenomics__divider--second tokenomics__divider--media"></div>
             <div class="tokenomics__item-num">27.5% </div>
             <div class="tokenomics__item-title">Marketing & Promotion</div>
             <div class="tokenomics__item-list tokenomics__item-list-second">
@@ -215,6 +332,7 @@
             </div>
           </div>
           <div class="tokenomics__item">
+            <div class="tokenomics__divider tokenomics__divider--third tokenomics__divider--media"></div>
             <div class="tokenomics__item-num tokenomics__item-num--third">22.5% </div>
             <div class="tokenomics__item-title tokenomics__item-title--third">R'n'D</div>
             <div class="tokenomics__item-list tokenomics__item-list--third">
@@ -224,6 +342,7 @@
             </div>
           </div>
           <div class="tokenomics__item">
+            <div class="tokenomics__divider tokenomics__divider--fourth tokenomics__divider--media"></div>
             <div class="tokenomics__item-num tokenomics__item-num--fourth">15% </div>
             <div class="tokenomics__item-title tokenomics__item-title--fourth">Cross-Chain Liquidity Listing</div>
             <div class="tokenomics__item-list tokenomics__item-list--fourth">
@@ -255,7 +374,7 @@
     </div>
     
   </section>
-  <section class="roadmap">
+  <section class="roadmap" id="roadmap">
     <img class="roadmap__vector" src="images/roadmap/vector.png" alt="vector">
     <div class="roadmap__line">
       <div class="roadmap__green-line"></div>
@@ -294,31 +413,56 @@
           <div class="roadmap__item-subtitle">Winter’21</div>
         </div>
       </div>
+      <div class="roadmap__media-inner">
+        <div class="roadmap__item">
+          <div class="roadmap__item-title">Rating v1 launch </div>
+          <div class="roadmap__item-subtitle">Spring’21</div>
+        </div>
+        <div class="roadmap__item">
+          <div class="roadmap__item-title">EchoQL v1 development 
+            Summer’21</div>
+          <div class="roadmap__item-subtitle">Summer’21</div>
+        </div>
+        <div class="roadmap__item">
+          <div class="roadmap__item-title">Public API</div>
+          <div class="roadmap__item-subtitle">Autumn’21</div>
+        </div>
+        <div class="roadmap__item">
+          <div class="roadmap__item-title">EchoQL v2</div>
+          <div class="roadmap__item-subtitle">Winter’21</div>
+        </div>
+        <div class="roadmap__media-line">
+          <div class="roadmap__media-round roadmap__media-round--first"></div>
+          <div class="roadmap__media-round roadmap__media-round--second"></div>
+          <div class="roadmap__media-round roadmap__media-round--third"></div>
+          <div class="roadmap__media-round roadmap__media-round--fourth"></div>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="partners">
+  <section class="partners" id="partners">
     <div class="container">
       <div class="subtitle partners__subtitle">Partners</div>
       <div class="partners__items">
-        <div class="partners__item">
+        <div class="partners__item partners__item--first">
           <img class="partners__logo-img" src="images/partners/detax.png" alt="detax">
         </div>
-        <div class="partners__item">
+        <div class="partners__item partners__item--second">
           <img class="partners__logo-img" src="images/partners/metahash.png" alt="metahash">
         </div>
-        <div class="partners__item">
+        <div class="partners__item partners__item--third">
           <img class="partners__logo-img" src="images/partners/drop.png" alt="drop">
         </div>
-        <div class="partners__item">
+        <div class="partners__item partners__item--fourth">
           <img class="partners__logo-img" src="images/partners/hashex.png" alt="hashex">
         </div>
-        <div class="partners__item partners__item--last">
+        <div class="partners__item partners__item--fifth partners__item--last">
           <img class="partners__logo-img" src="images/partners/solid-group.png" alt="solid">
         </div>
       </div>
     </div>
   </section>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="container">
       <div class="footer__social">
         <div class="footer__social-item">
@@ -340,7 +484,11 @@
       </div>
     </div>
   </footer>
-  
+  <a href="#up" class="pageup">
+		<svg class="up" viewBox="0 0 26 26" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M26 0H0V26H26V0ZM4.6593 17.7519L13.1233 10.33L21.5873 17.7519L22.9059 16.2481L13.7826 8.24813L13.1233 7.67L12.464 8.24813L3.3407 16.2481L4.6593 17.7519Z" fill="black"/>
+		</svg>
+	</a>
   <script src="js/script.js"></script>
 </body>
 </html>

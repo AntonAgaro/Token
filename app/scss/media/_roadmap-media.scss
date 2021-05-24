@@ -1,0 +1,126 @@
+@media (max-width: 1487px) {
+    .roadmap {
+        &__vector {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 1395px) {
+    .roadmap {
+        &__item--fourth {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 1290px) {
+    .roadmap {
+        &__inner--down {
+            margin-left: 10%;
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .roadmap {
+        &__inner {
+            width: 60%;
+        }
+        &__inner--down {
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .roadmap {
+        padding-top: 57px;
+        padding-bottom: 0;
+        &__line {
+            top: 60%;
+        }
+        &__subtitle {
+            margin-left: 12px;
+        }
+        &__inner {
+            width: 100%;
+            justify-content: flex-start;
+            &--up {
+                margin-top: 26px;
+                margin-left: 12px;
+                gap: 150px;
+            }
+            &--down {
+                margin-top: 63px;
+                margin-left: 157px;
+                gap: 58px;
+            }
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .roadmap {
+        background-image: url("../images/roadmap/vector-media.png");
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: 55% 57%;
+        padding-top: 40px;
+        &__line {
+            display: none;
+        }
+        &__subtitle {
+            margin-left: 14px;
+            text-align: center;
+        }
+        &__inner {
+            display: none;
+        }
+        &__item-title {
+            font-size: 18px;
+        }
+        &__media-inner {
+            position: relative;
+            margin-top: 26px;
+            margin-left: 56px;
+            display: flex;
+            flex-flow: column;
+            gap: 20px;
+        }
+        &__media-line {
+            position: absolute;
+            display: block;
+            top: 3%;
+            left: -9%;
+            height: 230px;
+            width: 3px;
+            background-color: $green-color;
+        }
+        &__media-round {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background: $black-color;
+            border: 3px solid #FFFFFF;
+            border-radius: 100%;
+            &--first {
+                top: -6px;
+                left: -6px;
+            }
+            &--second {
+                top: 61px;
+                left: -6px;
+            }
+            &--third {
+                top: 149px;
+                left: -6px;
+            }
+            &--fourth {
+                top: 215px;
+                left: -6px;
+            }
+        }
+    }
+}

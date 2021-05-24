@@ -1,3 +1,4 @@
+
 @import 'global/vars';
 @import 'global/global';
 @import 'global/fonts';
@@ -9,6 +10,9 @@
 
 //sections
 @import './sections/header';
+@import './sections/burger';
+@import './sections/tab-menu';
+@import './sections/mobile-menu';
 @import './sections/token';
 @import './sections/key';
 @import './sections/sources';
@@ -17,4 +21,17 @@
 @import './sections/partners';
 @import './sections/footer';
 
+//elements
+@import './sections/page-up-btn';
+
+//media
+@import './media/roadmap-media';
+@import './media/header-media';
+@import './media/burger-media';
+@import './media/token-media';
+@import './media/key-media';
+@import './media/tokenomics-media';
+@import './media/sources-media';
+@import './media/partners-media';
+@import './media/footer-media';
 

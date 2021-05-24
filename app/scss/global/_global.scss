@@ -1,6 +1,9 @@
 html,
 body {
 	height: 100%;
+	@media (max-width: 580px) {
+		overflow-x: hidden;
+	}
 }
 
 .footer {
@@ -14,6 +17,16 @@ body {
 	&--header {
 		@include flex;
 	} 
+	@media (max-width: 780px) {
+		max-width: 708px;
+		padding: 0 15px;
+		margin: 0;
+	}
+	@media (max-width: 580px) {
+		max-width: 100%;
+		padding: 0 15px;
+		margin: 0;
+	}
 }
 
 .subtitle {
@@ -25,9 +38,13 @@ body {
 	&--white {
 		color: #FFFFFF;
 	}
-
+	@media (max-width: 780px) {
+		font-size: 40px;
+	}
+	@media (max-width: 580px) {
+		font-size: 30px;
+	}
 }
-
 
 
 

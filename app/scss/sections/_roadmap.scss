@@ -2,6 +2,7 @@
     padding-top: 99px;
     padding-bottom: 61px;
     position: relative;
+    overflow-x: hidden;
     &__vector {
         position: absolute;
         top: 95px;
@@ -79,5 +80,11 @@
         font-size: 14px;
         line-height: 140%;
         color: $black-color;
+    }
+    &__media-inner {
+        display: none;
+    }
+    &__media-line {
+        display: none;
     }
 }

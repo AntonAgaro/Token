@@ -42,6 +42,9 @@
         height: 8px;
         background: linear-gradient(90deg, #2E31BC 0%, rgba(46, 49, 188, 0) 100%);
         border-radius: 20px;
+        &--media {
+            display: none;
+        }
         &--first {
             width: 278px;
         }
@@ -73,6 +76,9 @@
         flex-flow: column;
         &--fifth {
             margin-top: -33px;
+        }
+        &--media {
+            display: none;
         }
     }
     &__item-num {

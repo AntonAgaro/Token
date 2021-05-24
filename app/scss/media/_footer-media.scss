@@ -1,0 +1,35 @@
+
+@media (max-width: 780px) { 
+    .footer {
+        padding-bottom: 40px;
+        
+        &__social-name {
+            font-size: 18px;
+        }
+        &__social-img {
+            width: 46px;
+            height: 46px;
+        }
+    }
+}
+
+@media (max-width: 580px) { 
+    .footer {
+        &__social-item {
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__social-name {
+            font-size: 14px;
+        }
+        &__text {
+            text-align: center;
+            margin: 18px auto 0 auto;
+            &--down {
+                margin: 10px auto 0 auto;
+            }
+        }
+
+    }
+}

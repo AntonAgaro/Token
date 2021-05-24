@@ -97,12 +97,20 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_animation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/animation */ "./app/js/modules/animation.js");
 /* harmony import */ var _modules_animationToken__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/animationToken */ "./app/js/modules/animationToken.js");
+/* harmony import */ var _modules_tabMenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/tabMenu */ "./app/js/modules/tabMenu.js");
+/* harmony import */ var _modules_scrolling__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/scrolling */ "./app/js/modules/scrolling.js");
+
+
 
 
 window.addEventListener('DOMContentLoaded', function () {
   var headerAnimation = new _modules_animation__WEBPACK_IMPORTED_MODULE_0__["default"]('.header__menu-item-link', 'animated__menuIn', 'animated__menuOut');
   headerAnimation.createAnimation();
   new _modules_animationToken__WEBPACK_IMPORTED_MODULE_1__["default"]('.token__wrapper-btn-img', '.token__wrapper-btn').bind();
+  new _modules_animationToken__WEBPACK_IMPORTED_MODULE_1__["default"]('.tokenomics__union', '.tokenomics__wrapper').bind();
+  new _modules_tabMenu__WEBPACK_IMPORTED_MODULE_2__["default"]('.header__burger', '.tab', '.header', 'tab-block').bindTab();
+  new _modules_tabMenu__WEBPACK_IMPORTED_MODULE_2__["default"]('.header__menu-media-320', '.mobile-menu', '.header', 'mobile-menu--active').bindTab();
+  Object(_modules_scrolling__WEBPACK_IMPORTED_MODULE_3__["default"])('.pageup');
 });
 
 /***/ }),
@@ -299,6 +307,128 @@ var AnimationToken = /*#__PURE__*/function () {
   }]);
 
   return AnimationToken;
+}();
+
+
+
+/***/ }),
+
+/***/ "./app/js/modules/scrolling.js":
+/*!*************************************!*\
+  !*** ./app/js/modules/scrolling.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var scrolling = function scrolling(upSelector) {
+  var upElem = document.querySelector(upSelector);
+  window.addEventListener('scroll', function () {
+    if (document.documentElement.scrollTop > 1650) {
+      upElem.style.opacity = '1';
+    } else {
+      upElem.style.opacity = '0';
+    }
+  }); //Плавный скролл с использованием window.requestAnimationFrame(callback);
+
+  var links = document.querySelectorAll('[href^="#"]'),
+      speed = 0.2;
+  links.forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      var widthTop = document.documentElement.scrollTop,
+          hash = this.hash,
+          toBlock = document.querySelector(hash).getBoundingClientRect().top,
+          start = null;
+      requestAnimationFrame(step);
+
+      function step(time) {
+        if (start === null) {
+          start = time;
+        }
+
+        var progress = time - start,
+            r = toBlock < 0 ? Math.max(widthTop - progress / speed, widthTop + toBlock) : Math.min(widthTop + progress / speed, widthTop + toBlock);
+        document.documentElement.scrollTo(0, r);
+
+        if (r != widthTop + toBlock) {
+          requestAnimationFrame(step);
+        } else {
+          location.hash = hash;
+        }
+      }
+    });
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (scrolling);
+
+/***/ }),
+
+/***/ "./app/js/modules/tabMenu.js":
+/*!***********************************!*\
+  !*** ./app/js/modules/tabMenu.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return TabMenu; });
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var TabMenu = /*#__PURE__*/function () {
+  function TabMenu(buttonSelector, tabMenuSelector, headerSelector, activeClass, closeBtn) {
+    _classCallCheck(this, TabMenu);
+
+    this.btn = document.querySelector(buttonSelector);
+    this.tabMenu = document.querySelector(tabMenuSelector);
+    this.closeBtn = this.tabMenu.querySelector('.close');
+    this.header = document.querySelector(headerSelector);
+    this.activeClass = activeClass;
+  }
+
+  _createClass(TabMenu, [{
+    key: "showTabMenu",
+    value: function showTabMenu() {
+      this.tabMenu.classList.toggle(this.activeClass);
+      this.header.classList.toggle('header-hide');
+    }
+  }, {
+    key: "hideTabMenu",
+    value: function hideTabMenu() {
+      this.tabMenu.classList.remove(this.activeClass);
+      this.header.classList.remove('header-hide');
+    }
+  }, {
+    key: "bindTab",
+    value: function bindTab() {
+      var _this = this;
+
+      document.addEventListener('click', function (event) {
+        var target = event.target;
+
+        if (target == _this.btn) {
+          _this.showTabMenu();
+        }
+
+        if (target.matches('.header__menu-item-link') || target == _this.closeBtn) {
+          _this.hideTabMenu();
+        }
+      });
+    }
+  }]);
+
+  return TabMenu;
 }();
 
 
